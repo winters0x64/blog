@@ -10,7 +10,7 @@
 	{{- end -}}
 
 	{{- if isset .Site.Params "favicon" -}}
-	<link rel="icon" type="image/png" href={{ .Site.Params.favicon }} />
+	<link rel="icon" type="image/png" href="{{ .Site.Params.favicon | relURL }}" />
 	{{- end -}}
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,8 +25,9 @@
 	{{ if and (isset .Site.Params "social") (.Site.Params.useCDN | default false) -}}
 		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 	{{- else if or (isset .Site.Params "social") (eq .Site.Params.mode "toggle") -}}
-		<script src="{{ absURL "js/feather.min.js" }}"></script>
+		<script src="{{ "js/feather.min.js" | relURL }}"></script>
 	{{ end }}
+	
 	{{ if .Site.Params.useCDN | default false -}}
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
@@ -84,9 +85,10 @@
 			});
 			</script>
 	{{ end }}
-	<link rel="icon" href="/favicon.ico" type="image/png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="manifest" href="/site.webmanifest">
+	
+	<link rel="icon" href="{{ "/favicon.ico" | relURL }}" type="image/png">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | relURL }}">
+	<link rel="manifest" href="{{ "/site.webmanifest" | relURL }}">
 
 	<!-- Custom CSS style get applied last -->
 	{{- if isset .Site.Params "customcss" }}
@@ -101,7 +103,7 @@
 	{{- else if (hasPrefix . "<script")}}
     {{ .| safeHTML }}
 	{{- else }}
-	<script src="{{ absURL . }}"></script>
+	<script src="{{ . | relURL }}"></script>
 	{{- end }}
 	{{- end }}
 </head>
