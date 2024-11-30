@@ -1,2 +1,2 @@
 # blog
-Src for my blog
+Source for my blog
