@@ -1,4 +1,4 @@
-baseURL = "http://winters0x64.xyz"
+baseURL = "http://localhost:1313"
 languageCode = "en-us"
 title = "Winters0x64"
 theme="archie"
