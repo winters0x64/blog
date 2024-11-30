@@ -7,6 +7,7 @@ copyright = "© winters0x64"
 pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+canonifyURLs = true
 
 disqusShortname = ""
 
