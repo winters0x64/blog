@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag Names on Winters0x64</title>
+    <link>http://localhost:1313/tags/tag-names/</link>
+    <description>Recent content in Tag Names on Winters0x64</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>© winters0x64</copyright>
+    <atom:link href="http://localhost:1313/tags/tag-names/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Title of the post</title>
+      <link>http://localhost:1313/posts/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/about/</guid>
+      <description>&lt;p&gt;Hallo&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Title of the post</title>
+      <link>http://localhost:1313/posts/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/test/</guid>
+      <description>&lt;p&gt;asdasd&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
